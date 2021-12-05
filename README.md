@@ -1,10 +1,10 @@
 # WiSe_21_22_Webdesign
-1. Aufgabe Kaleidoskop:  
+### Aufgabe "Kaleidoskop":  
 Erstellen Sie eine Seite "Kaleidoskop". Auf der Seite gibt es eine Schaltfläche "Weiter". Die ganze Seite ist mit Farbe hinterlegt.  
 Klickt der Nutzer auf die Schaltfläche "Weiter", wird die Hintergrund-Farbe auf die nächste Farbe geändert.  
 Was die Farbenreihenfolge ist, können Sie selbst entscheiden.
 
-2. Aufgabe Zitaten:  
+### Aufgabe "Zitaten":  
 Nehmen Sie die Zitaten von unten. die Webseite soll eine Schaltfläche haben. Wird auf die Schaltfläche geklickt, erscheint eine neue Zitate (Autor und Text getrennt). Die Zitaten zufällig auswählen (Math.random()).
 
 |Quote|Author|
