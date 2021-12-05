@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+th {
+    text-align: left;
+    background-color: #bbb;
+}
+td, th {
+    padding: 0.25em 1em;
+}
+.preis {
+    text-align: right;
+    word-spacing: -0.2ch;
+}
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+table {
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 700px),(min-device-width: 0px) and (max-device-width: 700px){
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	td {
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	td:before {
+		position: absolute;
+		left: 0;
+		width: 50%;
+	}
+	td:nth-of-type(1):before { content: "Produkt"; font-size:40px;}
+	td:nth-of-type(2):before { content: "Kategorie"; font-size:40px;}
+	td:nth-of-type(3):before { content: "Alkohol"; font-size:40px;}
+	td:nth-of-type(4):before { content: "Preis"; font-size:40px;}
+	td:nth-of-type(5):before { content: "Geschmack"; font-size:40px;}
+	.preis{
+		text-align:left;
+	}
+}
