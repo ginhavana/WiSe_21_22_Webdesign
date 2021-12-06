@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>WebDesign </title>
+  <style>
+  /*
+    body {
+      background-color: #fff;
+      opacity: 1;
+      background-image:  linear-gradient(#000 1px, transparent 1px), linear-gradient(to right, #000 1px, #fff 1px);
+      background-size: 50px 50px;
+    */  
+      /*
+      background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
+background-size: 50px 50px;
+    }
+    */
+
+    th {
+      background-color: #8f8;
+      font-weight: bold;
+      padding: 0 1em 0 1em;
+    }
+    td {
+      text-align: center;
+    }
+    td.diagonal {
+      background-color: #ccc;
+    }
+    table, td, th {
+      border: 1px solid black;
+    }
+    
+    table {
+      border-collapse: collapse;
+    }
+    tr:hover {
+      background-color: #ff8;
+    }
+    
+    footer {
+      font-size: 50%;
+      color: gray;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>WebDesign JavaScript Dokument manipulieren</h1>
+  </header>    
+  
+  <main>
+    <script>
+      document.write("<table>");
+      
+      document.write("<caption>Multiplikation</caption>");
+      console.log("caption>Multiplikation</caption>");
+      document.write("<th>X</th>");
+      console.log("<th>X</th>");
+      for (let j = 1; j < 13; j++) {
+        document.write("<th>" + j + "</th>");
+        console.log("<th>" + j + "</th>");
+      }
+      for (let i = 1; i < 13; i++) {
+        document.write("<tr>");
+        console.log("<tr>");
+        document.write("<th>" + i + "</th>");
+        console.log("<th>" + i + "</th>");
+        for (let j = 1; j < 13; j++) {
+          let klasse = (i == j) ? "diagonal" : "normal";
+          document.write("<td class=" + klasse + ">" + i*j + "</td>");
+          console.log("<td class=" + klasse + ">" + i*j + "</td>");
+        }
+        document.write("</tr>");		
+      }
+      document.write("</table>");
+      console.log("</table>");
+    </script>
+  </main>
+
+  <footer>
+    Copyright &copy; 2021 Hochschule Nordhausen
+  </footer>
+
+</body>
+</html>
