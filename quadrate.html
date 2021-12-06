@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- HS Nordhausen, FB Ingenieurwissenschaften -->
+<!-- 233 WebDesign -->
+<!-- WS 2021/22 -->
+<head>
+    <meta charset="utf-8" 7>
+    <meta name="author" content="Alexander Dotsenko"/>
+    <meta name="keywords" content="m233 WebDesign"/>
+    <title>m233 Quadrate</title>
+    <style id="style-quadrat">
+      body {
+          margin: 1px;
+      }
+      
+      .quadrat {
+          background-color: #67BD00;
+          border-color: #00599E;
+          border-style: solid;
+          box-sizing: border-box;
+      }
+      
+      .quadrat-gross {
+          width: 75vmin;
+          height: 75vmin;
+          border-width: 17.5vmin;
+      }
+      
+      .quadrat-normal {
+          width: 50vmin;
+          height: 50vmin;
+          border-width: 12.5vmin;
+      }
+    </style>
+</head>
+<body>
+    <div class="quadrat quadrat-normal" id="quadrat1"></div>
+    <script>
+    const div = document.querySelector("#quadrat1");
+    div.addEventListener("click", () => {
+        div.classList.toggle("quadrat-normal");
+        div.classList.toggle("quadrat-gross");
+    });  
+    </script>
+</body>
+
+</html>
