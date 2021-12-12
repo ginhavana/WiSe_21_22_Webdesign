@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link href="*.css" rel="stylesheet" type="text.css">
-<script defer src="*.js"></script>
+<!-- <meta http-equiv="refresh" content="1"/> -->
+<link href="digitaluhr.css" rel="stylesheet" type="text/css">
+<script defer src="digitalclock.js"></script>
+<title>Digitaluhr</title>
 </head>
-<body>
+
+<body class="body">
+	<div class="container">
+		<button class="button" type="button" onclick="showtime()">
+		<img src="digitaluhr_icon.png" alt="digitaluhr_icon">
+		</button>
+		<div class="eclock textclock" id="eclock"></div>
+		<!-- <div class="dclock" id="dclock"></div> -->
+	</div>
 </body>
 </html>
