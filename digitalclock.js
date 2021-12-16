@@ -13,7 +13,7 @@ let hour = d.getHours();
 // let eDay = eDays[d.getDay()];
 // let eMonth = eMonths[month - 1];
 	
-var eclock = document.getElementById("eclock");
+const eclock = document.getElementById("eclock");
 eclock.innerHTML = d;
 
 setTimeout(function(){
