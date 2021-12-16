@@ -1,5 +1,5 @@
 // set a var with 3 colors as 3 items
-var colors = ["red", "blue", "yellow"];
+let colors = ["red", "blue", "yellow"];
 	
 function nextColor()
 {
@@ -12,5 +12,5 @@ function nextColor()
 	// nextColor(false);
 }
 
-let next = document.getElementById("next");
+var next = document.getElementById("next");
 next.addEventListener('click',nextColor);
