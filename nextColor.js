@@ -11,3 +11,6 @@ function nextColor()
 	document.body.style.backgroundColor = selectedColor;
 	// nextColor(false);
 }
+
+let next = document.getElementById("next");
+next.addEventListener('click',nextColor);
