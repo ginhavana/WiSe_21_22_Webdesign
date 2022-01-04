@@ -1,4 +1,4 @@
-.body{
+body{
 	height: 100vh; 
  }
 
@@ -9,12 +9,15 @@
 }
 
 .button{
+	/* set position horizontally and vertically middle */
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
 	top: 0;
 	bottom: 0;
+	
+	/* set other attribute */
 	width: 150px;
 	height: 150px;
 	background-color: white;

@@ -12,5 +12,7 @@ function nextColor()
 	// nextColor(false);
 }
 
+
 var next = document.getElementById("next");
+// create event 'click' for Element with id 'next' that fire function 'nextColor'
 next.addEventListener('click',nextColor);

@@ -1,4 +1,4 @@
-.body{
+body{
 	height: 100vh; 
  }
 
@@ -9,11 +9,15 @@
 }
 
 .button{
+	/* set position horizontally middle */
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
+	/* with distance 5% of view height from body top border */
 	top: 5vh;
+	
+	/* set other attribute */
 	width: 50px;
 	height: 50px;
 	background-color: white;
@@ -21,13 +25,15 @@
 }
 
 .quote{
+	/* set position horizontally middle */
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
 	margin-top: 10vh;
+	
+	/* set other attribute */
 	width: 50vw;
-	height: 5vh;
 	background-color: white;
 	border: 0px solid;
 	text-align:center;
@@ -35,10 +41,13 @@
 }
 
 .author{
+	/* set position for author slightly to the right */
 	position: absolute;
 	right: 10%;
 	margin: auto;
-	margin-top: 16.5vh;
+	margin-top: 25vh;
+	
+	/* set other attribute */
 	width: 30vw;
 	height: 2vw;
 	background-color: white;
