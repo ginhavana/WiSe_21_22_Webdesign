@@ -1,10 +1,16 @@
 body{background-color:#99ffff}
-.container{position:relative;
-	top:50px;
-	border:1px solid #ff6699;
+
+.container{
+	/* set position horizontally middle */
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/* with distance 15% of view height from body top border */
+	top: 15vh;
+	border:1px solid black;
 	padding-bottom:10px;
 	width:50vw;
-	margin-left:25vw;
 	background-color:#ff6699}
 	
 h1{text-align:center;}
