@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<!--
+HS Nordhausen, FB Ingenieurwissenschaften
+m233 WebDesign
+WS 2021-22
+-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alexander Dotsenko" />
+    <meta name="keywords" content="WebDesign Flexbox" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+body {
+    max-width: 58em;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ 
+.flex-container-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-container-cards {
+    justify-content: center;
+}
+
+.flex-container-span {
+    justify-content: space-around;
+}
+
+button {
+    margin: 1em;
+    padding: 0.25em 0.5em;
+    width: 7em;
+    text-align: center;
+}
+
+.aktie {
+    display: flex;
+    align-items: center;
+    border: 0.1em solid black;
+    margin: 0.25em;
+    padding: 0.25em;
+    width: 12.5em;
+}
+
+.aktie label {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    margin: 0.5em;
+}
+
+footer {
+    font-size: 60%;
+}
+  </style>
+    <title>m233 WebDesign</title>
+</head>
+<body>
+    <main>
+        <form>
+            <div class="flex-container flex-container-cards">
+                <div class="aktie">
+                    <input type="checkbox" id="ADS"/>
+                    <label for="ADS">Adidas AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="AIR"/>
+                    <label for="AIR">Airbus SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="ALV"/>
+                    <label for="ALV">Allianz SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="BAS"/>
+                    <label for="BAS">BASF SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="BAYN"/>
+                    <label for="BAYN">Bayer AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="BEI"/>
+                    <label for="BEI">Beiersdorf AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="BMW"/>
+                    <label for="BMW">BMW AG St</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="BNR"/>
+                    <label for="BNR">Brenntag SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="CON"/>
+                    <label for="CON">Continental AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="1COV"/>
+                    <label for="1COV">Covestro AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="DAI"/>
+                    <label for="DAI">Daimler AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="DHER"/>
+                    <label for="DHER">Delivery Hero SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="DBK"/>
+                    <label for="DBK">Deutsche Bank AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="DB1"/>
+                    <label for="DB1">Deutsche Börse AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="DPW"/>
+                    <label for="DPW">Deutsche Post AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="DTE"/>
+                    <label for="DTE">Deutsche Telekom AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="EOAN"/>
+                    <label for="EOAN">E.ON SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="FME"/>
+                    <label for="FME">Fresenius Medical Care AG & Co. KGaA St</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="FRE"/>
+                    <label for="FRE">Fresenius SE & Co. KGaA</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="HEI"/>
+                    <label for="HEI">HeidelbergCement AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="HFG"/>
+                    <label for="HFG">HelloFresh SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="HEN3"/>
+                    <label for="HEN3">Henkel AG & Co. KGaA Vz</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="IFX"/>
+                    <label for="IFX">Infineon Technologies AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="LIN"/>
+                    <label for="LIN">Linde plc</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="MRK"/>
+                    <label for="MRK">Merck KGaA</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="MTX"/>
+                    <label for="MTX">MTU Aero Engines AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="MUV2"/>
+                    <label for="MUV2">Münchener Rück AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="PAH3"/>
+                    <label for="PAH3">Porsche Automobil Holding SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="PUM"/>
+                    <label for="PUM">PUMA SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="QIA"/>
+                    <label for="QIA">Qiagen N.V.</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="RWE"/>
+                    <label for="RWE">RWE AG St</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="SAP"/>
+                    <label for="SAP">SAP SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="SRT3"/>
+                    <label for="SRT3">Sartorius AG Vz</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="SIE"/>
+                    <label for="SIE">Siemens AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="ENR"/>
+                    <label for="ENR">Siemens Energy AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="SHL"/>
+                    <label for="SHL">Siemens Healthineers AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="SY1"/>
+                    <label for="SY1">Symrise AG</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="VOW3"/>
+                    <label for="VOW3">Volkswagen AG Vz</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="VNA"/>
+                    <label for="VNA">Vonovia SE</label>
+                </div>
+                <div class="aktie">
+                    <input type="checkbox" id="ZAL"/>
+                    <label for="ZAL">Zalando SE</label>
+                </div>
+            </div>
+            <div class="flex-container flex-container-buttons">
+                <button>zurücksetzen</button>
+                <span class="flex-container flex-container-span">
+                    <button>kaufen</button>
+                    <button>verkaufen</button>
+                </span>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h5>m233 WebDesign</h5>
+        <p>Copyright &copy 2021
+       <a href="https://www.hs-nordhausen.de/">HS Nordhausen</a>
+        </p>
+    </footer>
+</body>
+</html>
