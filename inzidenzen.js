@@ -33,6 +33,7 @@ let main = document.querySelector("main");
 for (let kreis of inzidenzen)
 {
    let div = document.createElement("div");
+   // add class name
    div.classList.add("inzidenz-landkreis");
    
    let span1 = document.createElement("span");
