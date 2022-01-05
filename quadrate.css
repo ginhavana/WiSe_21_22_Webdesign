@@ -1,0 +1,22 @@
+body{
+	margin: 1px;
+}
+      
+.quadrat {
+	background-color: #67BD00;
+	border-color: #00599E;
+	border-style: solid;
+	box-sizing: border-box;
+}
+
+.quadrat-gross {
+	width: 75vmin;
+	height: 75vmin;
+	border-width: 17.5vmin;
+}
+	
+.quadrat-normal {
+	width: 50vmin;
+	height: 50vmin;
+	border-width: 12.5vmin;
+}
