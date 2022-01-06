@@ -7,6 +7,6 @@ function ask()
 	ask = new XMLHttpRequest();
 	
 	ask.onreadystatechange = alertContents;
-	ask.open('GET','tronalddump.api');
+	ask.open("GET","https://api.tronalddump.io/random/quote",true);
 	ask.send();
 }
