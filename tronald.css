@@ -6,7 +6,7 @@ body{ /* flexcontainer */
 }
 
 .container{
-	width:50%;
+	width:70%;
 	border: 1px solid gold;
 	background-color:green;
     display: flex;
@@ -18,12 +18,14 @@ body{ /* flexcontainer */
 
 header{
 	border: 1px solid red;
-	font-size:3em;
+	background-color:magenta;
+	font-size:4em;
 }
 
 main{
 	border: 1px solid red;
-	height: 40vh;
+	background-color:gold;
+	height: 70%;
 	width:100%;
 	flex-direction:row;
 }
@@ -34,11 +36,16 @@ main > section{
 	text-align:center;
 	}
 
-.celebname{
+button{
 	font-size:2em;
+}
+
+.celebname{
+	font-size:3em;
 }
 
 footer{
 	border: 1px solid red;
+	background-color:cyan;
 	height: 10vh;
 }
