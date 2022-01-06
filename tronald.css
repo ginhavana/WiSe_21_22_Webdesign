@@ -1,8 +1,44 @@
 body{ /* flexcontainer */
 	height: 100vh;
 	border: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container{
+	width:50%;
+	border: 1px solid gold;
+	background-color:green;
     display: flex;
 	flex-direction:column;
-    justify-content: center;
+	flex-wrap: wrap;
+    justify-content: space-around;
 	align-items: center;
- }
+}
+
+header{
+	border: 1px solid red;
+	font-size:3em;
+}
+
+main{
+	border: 1px solid red;
+	height: 40vh;
+	width:100%;
+	flex-direction:row;
+}
+
+main > section{
+	border: 1px solid red;
+	width:100%;
+	text-align:center;
+	}
+
+.celebname{
+	font-size:2em;
+}
+
+footer{
+	border: 1px solid red;
+	height: 10vh;
+}
