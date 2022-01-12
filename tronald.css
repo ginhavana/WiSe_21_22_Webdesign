@@ -1,29 +1,29 @@
 body{ /* flexcontainer */
 	height: 100vh;
-	border: 1px solid black;
+	border: 0px solid black;
 	display: flex;
 	justify-content: space-around;
 }
 
 .container{
 	width:70%;
-	border: 1px solid gold;
+	border: 0px solid gold;
 	background-color:green;
     display: flex;
 	flex-direction:column;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
     justify-content: space-around;
 	align-items: center;
 }
 
 header{
-	border: 1px solid red;
+	border: 0px solid red;
 	background-color:magenta;
 	font-size:4em;
 }
 
 main{
-	border: 1px solid red;
+	border: 0px solid red;
 	background-color:gold;
 	height: 70vh;
 	width:100%;
@@ -31,7 +31,7 @@ main{
 }
 
 main > section{
-	border: 1px solid red;
+	border: 0px solid red;
 	width:100%;
 	text-align:center;
 	}
@@ -45,7 +45,7 @@ button{
 }
 
 footer{
-	border: 1px solid red;
+	border: 0px solid red;
 	background-color:cyan;
 	height: 10vh;
 }
