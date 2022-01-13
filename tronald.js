@@ -22,8 +22,8 @@ function alertContents()
 		if (ask.status === 200)
 		{
 			var jsonResponse = JSON.parse(ask.responseText);
-			target.innerHTML = jsonResponse.tags;
-			quote.innerHTML = jsonResponse.value;
+			target.textContent = jsonResponse.tags;
+			quote.textContent = jsonResponse.value;
 		} 
 		else 
 		{
